@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B93B3BD028B8D4CD00784BBB /* MessageBoxLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93B3BCF28B8D4CD00784BBB /* MessageBoxLabel.swift */; };
+		B9A2480028ABBD93003265AD /* ResultBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A247FF28ABBD93003265AD /* ResultBase.swift */; };
+		B9A5031C28BA2AE0009C96E6 /* MessageDatailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A5031B28BA2AE0009C96E6 /* MessageDatailViewController.swift */; };
+		B9A773E628B9A34000813218 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A773E428B9A34000813218 /* MenuCell.swift */; };
+		B9A773E728B9A34000813218 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9A773E528B9A34000813218 /* MenuCell.xib */; };
+		B9A773F028B9C0CE00813218 /* MessageListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A773EF28B9C0CE00813218 /* MessageListTableViewController.swift */; };
+		B9A773F328B9C12700813218 /* MessageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A773F128B9C12700813218 /* MessageListCell.swift */; };
+		B9A773F428B9C12700813218 /* MessageListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9A773F228B9C12700813218 /* MessageListCell.xib */; };
+		B9A96588289176B500013521 /* ResendEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A96586289176B500013521 /* ResendEmailViewController.swift */; };
+		B9AE112F28A8E5F400E27B94 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = B9AE112E28A8E5F400E27B94 /* Toast */; };
+		B9AE5B09289F2DE4006FEC29 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B9AE5B08289F2DE4006FEC29 /* IQKeyboardManagerSwift */; };
+		B9AE5B10289F321F006FEC29 /* AlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AE5B0B289F321F006FEC29 /* AlamofireManager.swift */; };
+		B9AE5B11289F321F006FEC29 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AE5B0C289F321F006FEC29 /* Router.swift */; };
+		B9AE5B12289F321F006FEC29 /* BaseInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AE5B0D289F321F006FEC29 /* BaseInterceptor.swift */; };
+		B9AE5B13289F321F006FEC29 /* StatusLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AE5B0E289F321F006FEC29 /* StatusLogger.swift */; };
+		B9AE5B14289F321F006FEC29 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AE5B0F289F321F006FEC29 /* Logger.swift */; };
+		B9AE5B18289F3322006FEC29 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AE5B16289F3322006FEC29 /* Constants.swift */; };
+		B9AE5B19289F3322006FEC29 /* ErrorHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AE5B17289F3322006FEC29 /* ErrorHandle.swift */; };
+		B9AE5B1C289F41FF006FEC29 /* LoginInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AE5B1B289F41FF006FEC29 /* LoginInfo.swift */; };
+		B9AE5B2B289FAFD4006FEC29 /* SwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AE5B2A289FAFD4006FEC29 /* SwiftLoader.swift */; };
+		B9AE5B33289FBAB8006FEC29 /* SignOutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AE5B31289FBAB8006FEC29 /* SignOutCell.swift */; };
+		B9AE5B34289FBAB8006FEC29 /* SignOutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9AE5B32289FBAB8006FEC29 /* SignOutCell.xib */; };
+		B9AE5B37289FD291006FEC29 /* FooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AE5B35289FD291006FEC29 /* FooterCell.swift */; };
+		B9AE5B38289FD291006FEC29 /* FooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9AE5B36289FD291006FEC29 /* FooterCell.xib */; };
 		B9D6991C2840AB9B003BC5F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D6991B2840AB9B003BC5F3 /* AppDelegate.swift */; };
 		B9D6991E2840AB9B003BC5F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D6991D2840AB9B003BC5F3 /* SceneDelegate.swift */; };
 		B9D699202840AB9B003BC5F3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D6991F2840AB9B003BC5F3 /* LoginViewController.swift */; };
@@ -16,13 +40,44 @@
 		B9D699312840AD0A003BC5F3 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D699302840AD0A003BC5F3 /* Extension.swift */; };
 		B9D699332840EBF5003BC5F3 /* MainLargeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D699322840EBF5003BC5F3 /* MainLargeButton.swift */; };
 		B9D6993528410D38003BC5F3 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D6993428410D38003BC5F3 /* AuthViewController.swift */; };
+		B9D85F7228B1BC0A00EEA4C2 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D85F7128B1BC0A00EEA4C2 /* SettingViewController.swift */; };
+		B9D85F7428B1E6D900EEA4C2 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D85F7328B1E6D900EEA4C2 /* ChangePasswordViewController.swift */; };
+		B9D85F7628B207D500EEA4C2 /* MgList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D85F7528B207D500EEA4C2 /* MgList.swift */; };
 		B9E48AD62844BB0F00DF4CC8 /* RevealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E48AD52844BB0F00DF4CC8 /* RevealViewController.swift */; };
 		B9E48AD82844BBC800DF4CC8 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E48AD72844BBC800DF4CC8 /* MyAccountViewController.swift */; };
 		B9E48ADA2844BC1100DF4CC8 /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E48AD92844BC1100DF4CC8 /* SideBarViewController.swift */; };
 		B9E48ADD2844E66300DF4CC8 /* CustomHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E48ADC2844E66300DF4CC8 /* CustomHeaderFooterView.swift */; };
+		B9E52BFA288B73E800D8783D /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = B9E52BF9288B73E800D8783D /* Tabman */; };
+		B9E52BFD288B8E6C00D8783D /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B9E52BFC288B8E6C00D8783D /* SwiftyJSON */; };
+		B9E52C00288B8F4100D8783D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B9E52BFF288B8F4100D8783D /* Alamofire */; };
+		B9E52C02288B97C700D8783D /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E52C01288B97C700D8783D /* ForgotPasswordViewController.swift */; };
+		B9E52C04288BCFD000D8783D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E52C03288BCFD000D8783D /* WebViewController.swift */; };
+		B9E52C06288BD2D000D8783D /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E52C05288BD2D000D8783D /* MainNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B93B3BCF28B8D4CD00784BBB /* MessageBoxLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBoxLabel.swift; sourceTree = "<group>"; };
+		B9A247FF28ABBD93003265AD /* ResultBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBase.swift; sourceTree = "<group>"; };
+		B9A5031B28BA2AE0009C96E6 /* MessageDatailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDatailViewController.swift; sourceTree = "<group>"; };
+		B9A773E428B9A34000813218 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		B9A773E528B9A34000813218 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		B9A773EF28B9C0CE00813218 /* MessageListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListTableViewController.swift; sourceTree = "<group>"; };
+		B9A773F128B9C12700813218 /* MessageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListCell.swift; sourceTree = "<group>"; };
+		B9A773F228B9C12700813218 /* MessageListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageListCell.xib; sourceTree = "<group>"; };
+		B9A96586289176B500013521 /* ResendEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResendEmailViewController.swift; sourceTree = "<group>"; };
+		B9AE5B0B289F321F006FEC29 /* AlamofireManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireManager.swift; sourceTree = "<group>"; };
+		B9AE5B0C289F321F006FEC29 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B9AE5B0D289F321F006FEC29 /* BaseInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseInterceptor.swift; sourceTree = "<group>"; };
+		B9AE5B0E289F321F006FEC29 /* StatusLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusLogger.swift; sourceTree = "<group>"; };
+		B9AE5B0F289F321F006FEC29 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		B9AE5B16289F3322006FEC29 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B9AE5B17289F3322006FEC29 /* ErrorHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandle.swift; sourceTree = "<group>"; };
+		B9AE5B1B289F41FF006FEC29 /* LoginInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInfo.swift; sourceTree = "<group>"; };
+		B9AE5B2A289FAFD4006FEC29 /* SwiftLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLoader.swift; sourceTree = "<group>"; };
+		B9AE5B31289FBAB8006FEC29 /* SignOutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutCell.swift; sourceTree = "<group>"; };
+		B9AE5B32289FBAB8006FEC29 /* SignOutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignOutCell.xib; sourceTree = "<group>"; };
+		B9AE5B35289FD291006FEC29 /* FooterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterCell.swift; sourceTree = "<group>"; };
+		B9AE5B36289FD291006FEC29 /* FooterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooterCell.xib; sourceTree = "<group>"; };
 		B9D699182840AB9B003BC5F3 /* SP Consulting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SP Consulting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D6991B2840AB9B003BC5F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9D6991D2840AB9B003BC5F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,10 +89,16 @@
 		B9D699302840AD0A003BC5F3 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		B9D699322840EBF5003BC5F3 /* MainLargeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLargeButton.swift; sourceTree = "<group>"; };
 		B9D6993428410D38003BC5F3 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		B9D85F7128B1BC0A00EEA4C2 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		B9D85F7328B1E6D900EEA4C2 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		B9D85F7528B207D500EEA4C2 /* MgList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MgList.swift; sourceTree = "<group>"; };
 		B9E48AD52844BB0F00DF4CC8 /* RevealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealViewController.swift; sourceTree = "<group>"; };
 		B9E48AD72844BBC800DF4CC8 /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
 		B9E48AD92844BC1100DF4CC8 /* SideBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
 		B9E48ADC2844E66300DF4CC8 /* CustomHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderFooterView.swift; sourceTree = "<group>"; };
+		B9E52C01288B97C700D8783D /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		B9E52C03288BCFD000D8783D /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		B9E52C05288BD2D000D8783D /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +106,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9E52C00288B8F4100D8783D /* Alamofire in Frameworks */,
+				B9AE5B09289F2DE4006FEC29 /* IQKeyboardManagerSwift in Frameworks */,
+				B9E52BFD288B8E6C00D8783D /* SwiftyJSON in Frameworks */,
+				B9AE112F28A8E5F400E27B94 /* Toast in Frameworks */,
+				B9E52BFA288B73E800D8783D /* Tabman in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,8 +125,64 @@
 				B9E48AD52844BB0F00DF4CC8 /* RevealViewController.swift */,
 				B9E48AD72844BBC800DF4CC8 /* MyAccountViewController.swift */,
 				B9E48AD92844BC1100DF4CC8 /* SideBarViewController.swift */,
+				B9E52C01288B97C700D8783D /* ForgotPasswordViewController.swift */,
+				B9E52C03288BCFD000D8783D /* WebViewController.swift */,
+				B9E52C05288BD2D000D8783D /* MainNavigationController.swift */,
+				B9A96586289176B500013521 /* ResendEmailViewController.swift */,
+				B9D85F7128B1BC0A00EEA4C2 /* SettingViewController.swift */,
+				B9D85F7328B1E6D900EEA4C2 /* ChangePasswordViewController.swift */,
+				B9A773EF28B9C0CE00813218 /* MessageListTableViewController.swift */,
+				B9A5031B28BA2AE0009C96E6 /* MessageDatailViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B9AE5B0A289F31D6006FEC29 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B9AE5B0B289F321F006FEC29 /* AlamofireManager.swift */,
+				B9AE5B0D289F321F006FEC29 /* BaseInterceptor.swift */,
+				B9AE5B0F289F321F006FEC29 /* Logger.swift */,
+				B9AE5B0C289F321F006FEC29 /* Router.swift */,
+				B9AE5B0E289F321F006FEC29 /* StatusLogger.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B9AE5B15289F32B7006FEC29 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B9AE5B2A289FAFD4006FEC29 /* SwiftLoader.swift */,
+				B9D699302840AD0A003BC5F3 /* Extension.swift */,
+				B9AE5B16289F3322006FEC29 /* Constants.swift */,
+				B9AE5B17289F3322006FEC29 /* ErrorHandle.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B9AE5B1A289F41C2006FEC29 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B9AE5B1B289F41FF006FEC29 /* LoginInfo.swift */,
+				B9A247FF28ABBD93003265AD /* ResultBase.swift */,
+				B9D85F7528B207D500EEA4C2 /* MgList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B9AE5B30289FBA88006FEC29 /* CELLS */ = {
+			isa = PBXGroup;
+			children = (
+				B9AE5B31289FBAB8006FEC29 /* SignOutCell.swift */,
+				B9AE5B32289FBAB8006FEC29 /* SignOutCell.xib */,
+				B9AE5B35289FD291006FEC29 /* FooterCell.swift */,
+				B9AE5B36289FD291006FEC29 /* FooterCell.xib */,
+				B9A773E428B9A34000813218 /* MenuCell.swift */,
+				B9A773E528B9A34000813218 /* MenuCell.xib */,
+				B9A773F128B9C12700813218 /* MessageListCell.swift */,
+				B9A773F228B9C12700813218 /* MessageListCell.xib */,
+			);
+			path = CELLS;
 			sourceTree = "<group>";
 		};
 		B9D6990F2840AB9B003BC5F3 = {
@@ -82,10 +204,13 @@
 		B9D6991A2840AB9B003BC5F3 /* SP Consulting */ = {
 			isa = PBXGroup;
 			children = (
+				B9AE5B30289FBA88006FEC29 /* CELLS */,
+				B9AE5B1A289F41C2006FEC29 /* Models */,
+				B9AE5B15289F32B7006FEC29 /* Utils */,
+				B9AE5B0A289F31D6006FEC29 /* API */,
 				B9E48ADB2844E63600DF4CC8 /* Views */,
 				B9A424792842EBE1001A96B8 /* Controllers */,
 				B9D6991B2840AB9B003BC5F3 /* AppDelegate.swift */,
-				B9D699302840AD0A003BC5F3 /* Extension.swift */,
 				B9D6991D2840AB9B003BC5F3 /* SceneDelegate.swift */,
 				B9D699212840AB9B003BC5F3 /* Main.storyboard */,
 				B9D699242840AB9E003BC5F3 /* Assets.xcassets */,
@@ -100,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				B9E48ADC2844E66300DF4CC8 /* CustomHeaderFooterView.swift */,
+				B93B3BCF28B8D4CD00784BBB /* MessageBoxLabel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -120,6 +246,13 @@
 			dependencies = (
 			);
 			name = "SP Consulting";
+			packageProductDependencies = (
+				B9E52BF9288B73E800D8783D /* Tabman */,
+				B9E52BFC288B8E6C00D8783D /* SwiftyJSON */,
+				B9E52BFF288B8F4100D8783D /* Alamofire */,
+				B9AE5B08289F2DE4006FEC29 /* IQKeyboardManagerSwift */,
+				B9AE112E28A8E5F400E27B94 /* Toast */,
+			);
 			productName = "SP Consulting";
 			productReference = B9D699182840AB9B003BC5F3 /* SP Consulting.app */;
 			productType = "com.apple.product-type.application";
@@ -148,6 +281,13 @@
 				Base,
 			);
 			mainGroup = B9D6990F2840AB9B003BC5F3;
+			packageReferences = (
+				B9E52BF8288B73E800D8783D /* XCRemoteSwiftPackageReference "Tabman" */,
+				B9E52BFB288B8E6C00D8783D /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				B9E52BFE288B8F4100D8783D /* XCRemoteSwiftPackageReference "Alamofire" */,
+				B9AE5B07289F2DE4006FEC29 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				B9AE112D28A8E5F400E27B94 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
 			productRefGroup = B9D699192840AB9B003BC5F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -162,8 +302,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9A773E728B9A34000813218 /* MenuCell.xib in Resources */,
 				B9D699282840AB9E003BC5F3 /* LaunchScreen.storyboard in Resources */,
 				B9D699252840AB9E003BC5F3 /* Assets.xcassets in Resources */,
+				B9AE5B38289FD291006FEC29 /* FooterCell.xib in Resources */,
+				B9A773F428B9C12700813218 /* MessageListCell.xib in Resources */,
+				B9AE5B34289FBAB8006FEC29 /* SignOutCell.xib in Resources */,
 				B9D699232840AB9B003BC5F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,16 +319,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9AE5B14289F321F006FEC29 /* Logger.swift in Sources */,
+				B9A5031C28BA2AE0009C96E6 /* MessageDatailViewController.swift in Sources */,
 				B9D699202840AB9B003BC5F3 /* LoginViewController.swift in Sources */,
+				B9A773E628B9A34000813218 /* MenuCell.swift in Sources */,
+				B9AE5B13289F321F006FEC29 /* StatusLogger.swift in Sources */,
+				B9AE5B12289F321F006FEC29 /* BaseInterceptor.swift in Sources */,
 				B9E48ADA2844BC1100DF4CC8 /* SideBarViewController.swift in Sources */,
+				B9E52C02288B97C700D8783D /* ForgotPasswordViewController.swift in Sources */,
 				B9D6991C2840AB9B003BC5F3 /* AppDelegate.swift in Sources */,
+				B9AE5B11289F321F006FEC29 /* Router.swift in Sources */,
+				B9A773F328B9C12700813218 /* MessageListCell.swift in Sources */,
+				B9D85F7628B207D500EEA4C2 /* MgList.swift in Sources */,
 				B9E48ADD2844E66300DF4CC8 /* CustomHeaderFooterView.swift in Sources */,
 				B9E48AD82844BBC800DF4CC8 /* MyAccountViewController.swift in Sources */,
+				B9AE5B33289FBAB8006FEC29 /* SignOutCell.swift in Sources */,
+				B9A96588289176B500013521 /* ResendEmailViewController.swift in Sources */,
+				B9AE5B2B289FAFD4006FEC29 /* SwiftLoader.swift in Sources */,
+				B9D85F7428B1E6D900EEA4C2 /* ChangePasswordViewController.swift in Sources */,
 				B9D699332840EBF5003BC5F3 /* MainLargeButton.swift in Sources */,
+				B9AE5B19289F3322006FEC29 /* ErrorHandle.swift in Sources */,
+				B9AE5B37289FD291006FEC29 /* FooterCell.swift in Sources */,
 				B9D6991E2840AB9B003BC5F3 /* SceneDelegate.swift in Sources */,
 				B9D6993528410D38003BC5F3 /* AuthViewController.swift in Sources */,
 				B9D699312840AD0A003BC5F3 /* Extension.swift in Sources */,
+				B9AE5B18289F3322006FEC29 /* Constants.swift in Sources */,
+				B9A773F028B9C0CE00813218 /* MessageListTableViewController.swift in Sources */,
+				B9E52C04288BCFD000D8783D /* WebViewController.swift in Sources */,
+				B9A2480028ABBD93003265AD /* ResultBase.swift in Sources */,
+				B9E52C06288BD2D000D8783D /* MainNavigationController.swift in Sources */,
+				B9D85F7228B1BC0A00EEA4C2 /* SettingViewController.swift in Sources */,
+				B93B3BD028B8D4CD00784BBB /* MessageBoxLabel.swift in Sources */,
+				B9AE5B10289F321F006FEC29 /* AlamofireManager.swift in Sources */,
 				B9E48AD62844BB0F00DF4CC8 /* RevealViewController.swift in Sources */,
+				B9AE5B1C289F41FF006FEC29 /* LoginInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +578,77 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B9AE112D28A8E5F400E27B94 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		B9AE5B07289F2DE4006FEC29 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		B9E52BF8288B73E800D8783D /* XCRemoteSwiftPackageReference "Tabman" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uias/Tabman";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		B9E52BFB288B8E6C00D8783D /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		B9E52BFE288B8F4100D8783D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B9AE112E28A8E5F400E27B94 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9AE112D28A8E5F400E27B94 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+		B9AE5B08289F2DE4006FEC29 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9AE5B07289F2DE4006FEC29 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		B9E52BF9288B73E800D8783D /* Tabman */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9E52BF8288B73E800D8783D /* XCRemoteSwiftPackageReference "Tabman" */;
+			productName = Tabman;
+		};
+		B9E52BFC288B8E6C00D8783D /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9E52BFB288B8E6C00D8783D /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		B9E52BFF288B8F4100D8783D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9E52BFE288B8F4100D8783D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B9D699102840AB9B003BC5F3 /* Project object */;
 }

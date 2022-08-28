@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageListCell" rowHeight="50" id="KGk-i7-Jjw" customClass="MessageListCell" customModule="SP_Consulting" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uhu-7j-flm">
+                        <rect key="frame" x="17" y="19.5" width="11" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="6bm-di-dfr"/>
+                            <constraint firstAttribute="width" constant="11" id="YG4-5T-9Xp"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyh-t7-F9k">
+                        <rect key="frame" x="44" y="6.5" width="29" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="CAk-US-zAN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="13"/>
+                        <color key="textColor" red="0.62352941176470589" green="0.62352941176470589" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tL-Kt-3Wy">
+                        <rect key="frame" x="44" y="24.5" width="33.5" height="18"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="15"/>
+                        <color key="textColor" red="0.21568627450980393" green="0.22745098039215686" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3tL-Kt-3Wy" firstAttribute="leading" secondItem="lyh-t7-F9k" secondAttribute="leading" id="8Mb-zz-xvI"/>
+                    <constraint firstItem="lyh-t7-F9k" firstAttribute="bottom" secondItem="Uhu-7j-flm" secondAttribute="top" id="LKi-fL-BYQ"/>
+                    <constraint firstItem="Uhu-7j-flm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Nd8-4Z-CXL"/>
+                    <constraint firstItem="3tL-Kt-3Wy" firstAttribute="top" secondItem="lyh-t7-F9k" secondAttribute="bottom" constant="5" id="cxG-CS-dqN"/>
+                    <constraint firstItem="lyh-t7-F9k" firstAttribute="leading" secondItem="Uhu-7j-flm" secondAttribute="leadingMargin" constant="19" id="dSA-RO-4BS"/>
+                    <constraint firstItem="Uhu-7j-flm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17" id="pEY-rh-4Hv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkImageView" destination="Uhu-7j-flm" id="JAr-L0-Sf7"/>
+                <outlet property="listTitle" destination="3tL-Kt-3Wy" id="psq-kl-qC8"/>
+                <outlet property="notiDate" destination="lyh-t7-F9k" id="Se5-dF-CAy"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="67"/>
+        </tableViewCell>
+    </objects>
+</document>

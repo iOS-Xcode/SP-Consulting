@@ -12,6 +12,8 @@ class RevealViewController: UIViewController {
     var contentVC: UIViewController?
     var sideVC: UIViewController?
     
+    var loginInfo : LoginInfo?
+
     var isSideBarShowing = false
     
     let SLIDE_TIME = 0.3
@@ -20,12 +22,42 @@ class RevealViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-    }
         
+        NotificationCenter.default.addObserver(self, selector: #selector(removeSelfView), name: NSNotification.Name(rawValue: "REMOVEVIEW"), object: nil)
+    }
+    
+    @objc func removeSelfView() {
+        /*
+        self.view.removeFromSuperview()
+        //self.navigationController?.viewControllers.removeAll()
+        self.navigationController?.removeFromParent()
+        guard let navigationController = self.navigationController else { return }
+        var navigationArray = navigationController.viewControllers // To get all UIViewController stack as Array
+        navigationArray.remove(at: navigationArray.count - 2) // To remove previous UIViewController
+         */
+
+        
+        if (navigationController?.viewControllers.count)! > 2 {
+            self.navigationController?.popToRootViewController(animated: false)
+        } else {
+            self.navigationController?.viewControllers.removeAll()
+            self.navigationController?.removeFromParent()
+            guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "MNC") else {
+                return
+            }
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: false)
+            
+        }
+    }
+    
     func setupView() {
+        self.navigationItem.leftBarButtonItem = nil
+        self.navigationItem.hidesBackButton = true
         
         if let vc = self.storyboard?.instantiateViewController(withIdentifier: "MNVC") as? UINavigationController {
             self.contentVC = vc
+            
             //각각 따로 등록 뷰 컨트롤러와 뷰끼리.
             self.addChild(vc)
             self.view.addSubview(vc.view)
